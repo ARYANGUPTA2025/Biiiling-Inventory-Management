@@ -46,10 +46,7 @@ class App(Tk):
         self.MFrame = Frame(self)
         self.SFrame = Frame(self)
         self.VFrame = Frame(self)
-
-        # /////////////////////////////////////////////////////////
-        # self.SFrame.grid()
-        # self.CFrame.grid()
+        
         self.MFrame.grid()
 
         self.main()
@@ -960,5 +957,5 @@ if __name__ == "__main__":
             pass
 
         else:
-            msb.showwarning("Connection Error", str(e) + "\nCan't fetch BRANDS")
+            msb.showwarning("Connection Error", str(e) + "\nCan't fetch BRANDS from Database")
     Order()
